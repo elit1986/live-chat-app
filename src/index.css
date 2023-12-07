@@ -1,0 +1,57 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+.popin-effect {
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .popin-effect:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  html{
+    background-color: #0E2954;
+    
+  }
+
+  .card-bg {
+    background-color: #2C74B3;
+  }
+
+.room-text-color{
+    color: #DDE6ED;
+}
+
+.room-name-color{
+    color: #DFFFD8;
+}
+
+.navbar-bg{
+    background-color: #0B2447;
+}
+
+.btn-bg{
+    background-color: #526D82;
+}
+
+.btn-bg:hover {
+    background-color: #9BB8CD;
+}
+
+.btn-bg:disabled {
+    background-color: #9BB8CD;
+}
+
+.input-bg{
+    background-color: #0E2954;
+}
+
+.chat-bg {
+  background-color: #2D4263;
+}
+
+
+
