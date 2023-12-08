@@ -34,14 +34,18 @@ const Chat: React.FC = () => {
             } my-2`}
           >
             <div
-              className={`relative ${
+              className={`relative flex items-center ${
                 uid === auth.currentUser?.uid ? 'flex-row-reverse' : ''
               }`}
             >
-              <div className="absolute -right-14 top-1/2 transform -translate-y-1/2">
+              <div
+                className={`absolute ${
+                  uid === auth.currentUser?.uid ? '-right-14' : '-left-14'
+                } top-1/2 transform -translate-y-1/2`}
+              >
                 <img
                   src={photoURL}
-                  alt={auth.currentUser?.displayName || 'User'}
+                  alt={displayName || 'User'}
                   className="w-10 h-10 rounded-full border-2 border-white"
                 />
               </div>

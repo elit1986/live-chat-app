@@ -63,20 +63,20 @@ const App: React.FC = () => {
                   />
                 ))}
               </div>
-              <div className="col-span-1">
-                <h2 className="text-3xl text-center font-bold my-5 text-white">
+              <div className="col-span-1 ml-20 ">
+                <h2 className="text-3xl align-left font-bold my-5 text-white">
                   Users
                 </h2>
                 {users.map((user) => (
                   <div key={user.uid} className="mb-10">
                     <div>
-                      <p className="font-bold text-center text-white">
+                      <p className="font-bold align-left text-white">
                         {user.displayName}
                       </p>
-                      <p className="font-bold text-center  text-white">
+                      <p className="font-bold align-left  text-white">
                         {user.email}
                       </p>
-                      <p className=" text-center  text-white">
+                      <p className=" align-left  text-white">
                         {user.createdAt?.toDate().toLocaleString()}
                       </p>
                     </div>

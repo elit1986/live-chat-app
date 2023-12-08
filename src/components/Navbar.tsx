@@ -47,7 +47,7 @@ const Navbar: React.FC<NavbarProps> = ({
 
   return (
     <div
-      className={`navbar-bg text-white p-4 flex justify-between items-center ${
+      className={`navbar-bg text-white py-4 px-7 flex justify-between items-center  ${
         isScrolled ? 'sticky top-0 z-50' : ''
       }`}
     >
